@@ -5,6 +5,7 @@ import Login from "../Pages/Login";
 import LogOut from "../Pages/LogOut";
 import Registration from "../Pages/Registration";
 import MyProfile from "../Pages/MyProfile";
+import Games from "../Pages/Games";
 
 
 export const router = createBrowserRouter([
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
             {
                 index : true,
                 element : <HomePage/>
+            },
+            {
+                path : '/games',
+                element : <Games/>
             },
             {
                 path : '/login',
