@@ -74,8 +74,13 @@ const Login = () => {
           </button> 
 
           <button 
-            onClick={handleGoogleLogin}
-            className="w-full bg-white py-3 rounded-lg font-semibold mt-4 text-gray-600 flex "><img src={googleImg} className="w-[35px] h-[30px] rounded full p-1" alt="" /> Continue with Google</button>
+          type="button"
+          onClick={handleGoogleLogin}
+          className="w-full flex items-center justify-center gap-2 bg-white text-black py-3 rounded-lg font-semibold mt-4 hover:bg-gray-100 transition">
+                   
+          <img src={googleImg} alt="Google Logo" className="w-6 h-6" />
+          Continue with Google </button>
+          
                  
          </form>
 

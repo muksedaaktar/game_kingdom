@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-gray-200 text-gray-500 shadow-lg ">
+    <nav className="w-full bg-white text-gray-500  ">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
 
         
@@ -105,9 +105,9 @@ const Navbar = () => {
         </div>
 
         
-        <div className="md:hidden">
+        {/* <div className="md:hidden">
           <Link to="/menu" className="text-purple-300 text-xl">☰</Link>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
