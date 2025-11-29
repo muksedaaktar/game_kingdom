@@ -14,7 +14,7 @@ const MyProfile = () => {
 
         
         <img
-          src={user?.photoURL || "https://ibb.co.com/v4ZQHN4C"}
+          src={user?.photoURL || "https://i.ibb.co.com/wZYyVF2g/call-of-duty.jpg"}
           className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white object-cover"
           alt="Profile"
         />

@@ -10,6 +10,7 @@ import GameDetails from "../Pages/GameDetails";
 import ProtectedRoute from "../Components/Layout/ProtectedRoute";
 import ForgotPassword from "../Pages/ForgotPassword";
 import Menu from "../Pages/Menu";
+import UpdateProfile from "../Pages/UpdateProfile";
 
 
 
@@ -41,6 +42,11 @@ export const router = createBrowserRouter([
              {
                 path : '/menu',
                 element : <Menu/>
+            },
+
+            {
+                path : '/update-profile',
+                element : <UpdateProfile/>
             },
 
 
