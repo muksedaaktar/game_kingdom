@@ -5,7 +5,10 @@ import Login from "../Pages/Login";
 import LogOut from "../Pages/LogOut";
 import Registration from "../Pages/Registration";
 import MyProfile from "../Pages/MyProfile";
-import Games from "../Pages/Games";
+
+import GameDetails from "../Pages/GameDetails";
+import ProtectedRoute from "../Components/Layout/ProtectedRoute";
+
 
 
 export const router = createBrowserRouter([
@@ -17,13 +20,17 @@ export const router = createBrowserRouter([
                 index : true,
                 element : <HomePage/>
             },
-            {
-                path : '/games',
-                element : <Games/>
-            },
+            
             {
                 path : '/login',
                 element : <Login/>
+            },
+
+             {
+                path : "/game/:id",
+                element :<ProtectedRoute>
+                         <GameDetails/>
+                </ProtectedRoute>
             },
              {
                 path : '/logout',

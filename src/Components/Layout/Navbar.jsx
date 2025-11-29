@@ -40,17 +40,6 @@ const Navbar = () => {
             Home
           </NavLink>
 
-          <NavLink
-            to="/games"
-            className={({ isActive }) =>
-              isActive
-                ? "text-purple-400 font-semibold"
-                : "hover:text-purple-300"
-            }
-          >
-            Games
-          </NavLink>
-
           
           {!user && (
             <>
