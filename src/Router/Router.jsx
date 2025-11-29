@@ -9,6 +9,7 @@ import MyProfile from "../Pages/MyProfile";
 import GameDetails from "../Pages/GameDetails";
 import ProtectedRoute from "../Components/Layout/ProtectedRoute";
 import ForgotPassword from "../Pages/ForgotPassword";
+import Menu from "../Pages/Menu";
 
 
 
@@ -35,6 +36,11 @@ export const router = createBrowserRouter([
             {
                 path : '/forgot-password',
                 element : <ForgotPassword/>
+            },
+
+             {
+                path : '/menu',
+                element : <Menu/>
             },
 
 
