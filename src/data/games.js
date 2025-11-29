@@ -13,7 +13,7 @@ export const games = [
     downloadLink: "https://www.pubgmobile.com/en-US/home.shtml",
     description:
       "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
-    ratings: "4.5",
+    ratings: "4.7",
     developer: "Krafton",
     img: pubgImg
   },
@@ -25,7 +25,7 @@ export const games = [
     downloadLink: "https://www.callofduty.com/mobile",
     description:
       "Call of Duty Mobile delivers intense multiplayer modes, battle royale action, and iconic maps from the COD franchise.",
-    ratings: "4.7",
+    ratings: "4.5",
     developer: "Activision",
     img: callImg
   },

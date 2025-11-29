@@ -38,7 +38,7 @@ export default function Home() {
     <MyContainer>
     <div className="w-full overflow-hidden">
      
-      <div className="relative w-full h-[400px] md:h-[550px] overflow-hidden rounded-2xl shadow-xl mb-16">
+      <div className="relative w-full h-[400px] md:h-[550px] overflow-hidden  rounded-2xl shadow-xl mb-16">
         <motion.img
           key={slides[index].id}
           src={slides[index].img}
