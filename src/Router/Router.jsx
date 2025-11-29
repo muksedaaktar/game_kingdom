@@ -8,6 +8,7 @@ import MyProfile from "../Pages/MyProfile";
 
 import GameDetails from "../Pages/GameDetails";
 import ProtectedRoute from "../Components/Layout/ProtectedRoute";
+import ForgotPassword from "../Pages/ForgotPassword";
 
 
 
@@ -31,6 +32,11 @@ export const router = createBrowserRouter([
                 path : '/registration',
                 element : <Registration/>
             },
+            {
+                path : '/forgot-password',
+                element : <ForgotPassword/>
+            },
+
 
              {
                 path : "/game/:id",

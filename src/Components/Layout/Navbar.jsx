@@ -94,9 +94,9 @@ const Navbar = () => {
         </div>
 
         
-        {/* <div className="md:hidden">
+        <div className="md:hidden">
           <Link to="/menu" className="text-purple-300 text-xl">☰</Link>
-        </div> */}
+        </div>
       </div>
     </nav>
   );

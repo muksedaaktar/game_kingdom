@@ -80,7 +80,13 @@ const Login = () => {
                    
           <img src={googleImg} alt="Google Logo" className="w-6 h-6" />
           Continue with Google </button>
-          
+
+
+           <p className="text-right mt-2 text-sm">
+           <span
+           className="text-blue-800 font-bold cursor-pointer"
+           onClick={() => navigate("/forgot-password", { state: { email } })}>Forgot Password?</span>
+            </p>    
                  
          </form>
 
