@@ -11,8 +11,10 @@ import ProtectedRoute from "../Components/Layout/ProtectedRoute";
 
 
 
+
 export const router = createBrowserRouter([
      {
+       
         path : "/",
         element: <MainLayout/>,
         children : [
@@ -25,6 +27,10 @@ export const router = createBrowserRouter([
                 path : '/login',
                 element : <Login/>
             },
+            {
+                path : '/registration',
+                element : <Registration/>
+            },
 
              {
                 path : "/game/:id",
@@ -36,10 +42,7 @@ export const router = createBrowserRouter([
                 path : '/logout',
                 element : <LogOut/>
             },
-             {
-                path : '/registration',
-                element : <Registration/>
-            },
+            
              {
                 path : '/my-profile',
                 element : <MyProfile/>

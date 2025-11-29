@@ -51,7 +51,7 @@ const Registration = () => {
   };
 
   return (
-    <div className="w-full min-h-screen flex justify-center items-center bg-blue-300 text-white">
+    <div className="w-full min-h-screen flex justify-center items-center bg-purple-600 text-white">
       <div className="bg-blue-500 p-8 rounded-xl w-[380px] shadow-lg">
         <h1 className="text-3xl font-bold text-center mb-6">Registration</h1>
         {error && <p className="text-red-400 mb-4 text-center">{error}</p>}
@@ -60,7 +60,7 @@ const Registration = () => {
           <label className="block mb-2 text-sm">Name</label>
           <input
             type="text"
-            className="w-full bg-gray-300 p-3 rounded-lg mb-4 outline-none"
+            className="w-full bg-gray-300 text-black p-3 rounded-lg mb-4 outline-none"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -69,7 +69,7 @@ const Registration = () => {
           <label className="block mb-2 text-sm">Email</label>
           <input
             type="email"
-            className="w-full bg-gray-300 p-3 rounded-lg mb-4 outline-none"
+            className="w-full bg-gray-300 text-black p-3 rounded-lg mb-4 outline-none"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -78,7 +78,7 @@ const Registration = () => {
           <label className="block mb-2 text-sm">Photo URL</label>
           <input
             type="text"
-            className="w-full bg-gray-300 p-3 rounded-lg mb-4 outline-none"
+            className="w-full bg-gray-300 text-black p-3 rounded-lg mb-4 outline-none"
             value={photoURL}
             onChange={(e) => setPhotoURL(e.target.value)}
           />
@@ -86,7 +86,7 @@ const Registration = () => {
           <label className="block mb-2 text-sm">Password</label>
           <input
             type="password"
-            className="w-full bg-gray-300 p-3 rounded-lg mb-6 outline-none"
+            className="w-full bg-gray-300 text-black p-3 rounded-lg mb-6 outline-none"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
