@@ -11,6 +11,7 @@ import ProtectedRoute from "../Components/Layout/ProtectedRoute";
 import ForgotPassword from "../Pages/ForgotPassword";
 import Menu from "../Pages/Menu";
 import UpdateProfile from "../Pages/UpdateProfile";
+import NotFound from "../Pages/NotFound";
 
 
 
@@ -49,6 +50,9 @@ export const router = createBrowserRouter([
                 element : <UpdateProfile/>
             },
 
+            
+
+
 
              {
                 path : "/game/:id",
@@ -64,6 +68,11 @@ export const router = createBrowserRouter([
              {
                 path : '/my-profile',
                 element : <MyProfile/>
+            },
+
+            {
+                path : '*',
+                element : <NotFound/>
             }
 
         ]
