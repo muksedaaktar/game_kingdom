@@ -6,7 +6,7 @@ import pubgImg from "../assets/pubg.jpg"
 import callImg from "../assets/call of duty.jpg"
 import freeFire from "../assets/free fire.jpg"
 import MyContainer from "../Components/Layout/MyContainer";
-
+import { games } from "../data/Games";
 
 const slides = [
   {
@@ -27,44 +27,6 @@ const slides = [
 ];
 
 
-const games = [
-  {
-    id: "1",
-    title: "Player Unknowns Battle Ground: PUBG",
-    coverPhoto: pubgImg,
-    category: "FPS",
-    downloadLink: "https://www.pubgmobile.com/en-US/home.shtml",
-    description:
-      "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
-    ratings: "4.5",
-    developer: "Krafton",
-    img: pubgImg
-  },
-  {
-    id: "2",
-    title: "Call of Duty: Mobile",
-    coverPhoto: callImg,
-    category: "FPS",
-    downloadLink: "https://www.callofduty.com/mobile",
-    description:
-      "Call of Duty Mobile delivers intense multiplayer modes, battle royale action, and iconic maps from the COD franchise.",
-    ratings: "4.7",
-    developer: "Activision",
-    img: callImg
-  },
-  {
-    id: "3",
-    title: "Free Fire: Battlegrounds",
-    coverPhoto: freeFire,
-    category: "Battle Royale",
-    downloadLink: "https://ff.garena.com/en/",
-    description:
-      "Free Fire is a survival shooter game offering quick 10-minute battles, unique characters, and fast-paced gameplay.",
-    ratings: "4.3",
-    developer: "Garena",
-    img: freeFire
-  }
-];
 
 export default function Home() {
   const [index, setIndex] = useState(0);
@@ -118,7 +80,7 @@ export default function Home() {
                   <img src={game.img} alt={game.title} className="w-full h-56 object-cover" />
                   <div className="p-4">
                     <h3 className="text-xl font-semibold">{game.title}</h3>
-                    <p className="text-sm mt-1 opacity-80">⭐ Rating: {game.rating}</p>
+                    <p className="text-sm mt-1 opacity-80">⭐ Rating: {game.ratings}</p>
                   </div>
                 </motion.div>
               </Link>
@@ -137,7 +99,7 @@ export default function Home() {
           <input
             type="email"
             placeholder="Enter your email"
-            className="flex-grow p-3 rounded-xl text-black bg-amber-100"
+            className="flex-`grow` p-3 rounded-xl text-black bg-amber-100"
           />
           <button
             type="submit"
