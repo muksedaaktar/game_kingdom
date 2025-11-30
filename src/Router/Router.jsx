@@ -12,6 +12,7 @@ import ForgotPassword from "../Pages/ForgotPassword";
 import Menu from "../Pages/Menu";
 import UpdateProfile from "../Pages/UpdateProfile";
 import NotFound from "../Pages/NotFound";
+import Games from "../Pages/Games";
 
 
 
@@ -51,7 +52,10 @@ export const router = createBrowserRouter([
             },
 
             
-
+             {
+                path : '/games',
+                element : <Games/>
+            },
 
 
              {

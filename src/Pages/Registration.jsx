@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import googleImg from "../assets/image.png"; 
+import MyContainer from "../Components/Layout/MyContainer";
 
 const Registration = () => {
   const { register, updateUserProfile, googleLogin } = useAuth();
@@ -50,7 +51,13 @@ const Registration = () => {
     }
   };
 
+  useEffect(() => {
+  document.title = "Registration | Game Kingdom";
+}, []);
+
+
   return (
+    <MyContainer>
     <div className="w-full min-h-screen flex justify-center items-center bg-purple-600 text-white">
       <div className="bg-blue-500 p-8 rounded-xl w-[380px] shadow-lg">
         <h1 className="text-3xl font-bold text-center mb-6">Registration</h1>
@@ -117,6 +124,7 @@ const Registration = () => {
         </p>
       </div>
     </div>
+    </MyContainer>
   );
 };
 

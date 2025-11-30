@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { updateProfile } from "firebase/auth";
+import MyContainer from "../Components/Layout/MyContainer";
 
 const UpdateProfile = () => {
   const { user } = useAuth();
@@ -31,8 +32,13 @@ const UpdateProfile = () => {
       console.error(err);
     }
   };
+     
+    useEffect(() => {
+      document.title = "Update Profile | Game Kingdom";
+      }, []);
 
   return (
+    <MyContainer>
     <div className="w-full min-h-screen bg-purple-600 flex justify-center items-center text-white">
       <div className="bg-purple-500 p-8 rounded-xl w-[380px] shadow-lg">
 
@@ -63,14 +69,15 @@ const UpdateProfile = () => {
 
           <button
             type="submit"
-            className="w-full bg-white text-purple-600 py-3 rounded-lg font-semibold hover:bg-gray-200 transition"
-          >
+            className="w-full bg-white text-purple-600 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+          
             Update Information
           </button>
         </form>
 
       </div>
     </div>
+    </MyContainer>
   );
 };
 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -33,6 +33,11 @@ export default function Home() {
 
   const nextSlide = () => setIndex((prev) => (prev + 1) % slides.length);
   const prevSlide = () => setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+
+ useEffect(() => {
+  document.title = "Home | Game Kingdom";
+   }, []);
+
 
   return (
     <MyContainer>

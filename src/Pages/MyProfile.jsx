@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import MyContainer from "../Components/Layout/MyContainer";
 
 const MyProfile = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
+  useEffect(() => {
+  document.title = "Profile | Game Kingdom";
+}, []);
+
 
   return (
+    <MyContainer>
     <div className="w-full min-h-screen bg-purple-600 flex justify-center items-center text-white">
       <div className="bg-purple-500 p-8 rounded-xl w-[380px] shadow-lg text-center">
 
@@ -32,6 +38,7 @@ const MyProfile = () => {
 
       </div>
     </div>
+    </MyContainer>
   );
 };
 

@@ -1,6 +1,7 @@
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import MyContainer from "../Components/Layout/MyContainer";
 
 const ForgotPassword = () => {
   const location = useLocation();
@@ -15,7 +16,12 @@ const ForgotPassword = () => {
     window.location.href = "https://mail.google.com/";
   };
 
+  useEffect(() => {
+    document.title = "Forgot Password | Game Kingdom";
+    }, []);
+
   return (
+    <MyContainer>
     <div className="w-full min-h-screen flex justify-center items-center bg-purple-600 text-white">
       <div className="bg-purple-500 p-8 rounded-xl w-[380px] shadow-lg">
         <h1 className="text-3xl font-bold text-center mb-6">Forgot Password</h1>
@@ -44,6 +50,7 @@ const ForgotPassword = () => {
         </p>
       </div>
     </div>
+    </MyContainer>
   );
 };
 

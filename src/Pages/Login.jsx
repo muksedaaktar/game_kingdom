@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext"; 
 import { Link, useNavigate } from "react-router-dom";
 import googleImg from "../assets/image.png"
+import MyContainer from "../Components/Layout/MyContainer";
+
 
 const Login = () => {
   const { login, googleLogin } = useAuth();               
@@ -35,8 +37,14 @@ const Login = () => {
   }
 };
 
+useEffect(() => {
+  document.title = "Login | Game Kingdom";
+}, []);
+
+
 
   return (
+    <MyContainer>
     <div className="w-full min-h-screen flex justify-center items-center bg-purple-600 text-white">
       <div className="bg-purple-500 p-8 rounded-xl w-[380px] shadow-lg">
 
@@ -97,6 +105,7 @@ const Login = () => {
 
       </div>
     </div>
+    </MyContainer>
   );
 };
 

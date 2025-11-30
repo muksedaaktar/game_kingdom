@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { games } from "../data/games"; 
+import { useEffect } from "react";
 // import { useAuth } from "../context/AuthContext";
 
 export default function GameDetails() {
@@ -14,6 +15,11 @@ export default function GameDetails() {
       </div>
     );
   }
+
+  useEffect(() => {
+  document.title = "Game Details | Game Kingdom";
+  }, []);
+
 
   return (
     <div className="max-w-5xl mx-auto p-6">
