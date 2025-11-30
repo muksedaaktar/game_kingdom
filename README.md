@@ -1,16 +1,73 @@
-# React + Vite
+#  Game Kingdom
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern gaming portal built using **React (Vite)**, **Firebase Authentication**, and **Netlify Hosting**.  
+Users can explore games, view details, manage profiles, and update their personal information securely.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Live Demo  
+ **Live Site:** https://taupe-cheesecake-36e8f7.netlify.app 
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##  Project Purpose  
+The purpose of **Game Kingdom** is to create a dynamic platform where users can:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse various games  
+- View detailed game information  
+- Manage user accounts  
+- Update their profile  
+- Enjoy smooth navigation through React Router  
+- Experience secure login and registration using Firebase  
+
+---
+
+##  Key Features  
+
+###  **Authentication**
+- Email/Password Login  
+- Google Login  
+- Protected Routes (My Profile, Update Profile)  
+- Firebase Auth State Persistence  
+
+###  **Routing**
+- React Router DOM (SPA Navigation)  
+- Dynamic Game Details Route  
+- 404 Handling (Netlify `_redirects` added)  
+
+###  **User Profile**
+- View Profile  
+- Update Name & Photo  
+- Realtime UI update after editing  
+
+###  **UI Features**
+- Fully responsive  
+- TailwindCSS  
+- Clean & modern layout  
+
+###  **Deployment**
+- Hosted on **Netlify**  
+- Vite optimized build  
+- SPA fallback handled through `_redirects` file  
+
+---
+
+##  **NPM Packages Used**
+
+### **React + Vite**
+- `react`
+- `react-dom`
+- `vite`
+
+### **Routing**
+- `react-router-dom`
+
+### **Firebase**
+- `firebase`
+
+### **UI & Styling**
+- `tailwindcss`
+
+
+
